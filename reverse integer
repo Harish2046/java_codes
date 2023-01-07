@@ -1,0 +1,16 @@
+package self;
+import java.util.*;
+public class reverse_int {
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int u=0;
+		while(n!=0){
+			int rem=n%10;
+			u=(rem+u*10);
+			n=n/10;
+		}
+		System.out.print(u);
+		sc.close();
+	}
+}
